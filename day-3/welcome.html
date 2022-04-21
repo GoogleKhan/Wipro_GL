@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="../css/index.css">
+
+    </head>
+    <body>
+        <!-------Header Section----------->
+        <header>
+            <img src="images/logo.png" alt="GreatLearning">
+            <nav>
+                <ul id = "menu">
+                    <li id = 'ProfilePafeLink'>
+                        <a href="profile-page.html">
+                            Profile page
+                        </a>
+                    </li>
+                    <li id = "MentorLink">Mentor</li>
+                </ul>
+                <button onclick="login()">Signup/Login</button>
+                <!-- <a href="login.html">Signup/Login</a> -->
+            </nav>
+        </header>
+     
+       <!-------Header Section Ends--------->
+       <!---Main Section Starts-->
+      <main>
+          <!-- Hero Unit -->
+          <section class = "hero-unit-container">
+              <div class = "hero-unit-mask">
+                  <h1>Welcome</h1>
+                  <a href="#">Know More</a>
+              </div>
+
+          </section>
+          <!-- Paper based Layout -->
+          <section>
+              <h1>Information</h1>
+              <section class = "card-container">
+                  <div class = "card">
+                    <h3>Full Stack Developer(Java)</h3>
+                    <img src="./images/java.png" alt = "Java Full stack">
+                    <p>
+                        Java Full stack course with Html css JavaScript Angular and Java
+                    </p>
+                  </div>
+                  <div class = "card">
+                    <h3>Full Stack Developer(.Net)</h3>
+                    <img src = "./images/dotnet.jpg" alt = ".Net Full stack">
+                    <p>
+                        .Net Full stack course with Html css JavaScript Angular and ASP.Net
+                    </p>
+                </div>
+                <div class = "card">
+                    <h3>Full Stack Developer(MEAN)</h3>
+                    <img src = "./images/mean.jpg" alt = "MEAN Full stack">
+                    <p>
+                        MEAN Full stack course with Html css JavaScript Angular and NodeJs
+                    </p>
+                </div>
+              </section>
+
+          </section>
+      </main>
+       <!--Main Section Ends-->
+       <!--Footer Sarts-->
+       <footer>
+            <h1 class = "heading">@GL</h1>
+       </footer>
+       <!--Footer ends -->
+       <script type="text/javascript">
+           function login(){
+               location.href = "index.html"
+           }
+       </script>
+    </body>
+</html>

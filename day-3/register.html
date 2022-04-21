@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <title>Register User</title>
+</head>
+<body>
+    <header>
+        <a href="welcome.html">
+            <img src="images/logo.png" alt="GreatLearning">
+        </a>
+        <nav>
+            <ul id = "menu">
+                <li id = 'ProfilePafeLink'>
+                    <a href="profile-page.html">
+                        Profile page
+                    </a>
+                </li>
+                <li id = "MentorLink">Mentor</li>
+            </ul>
+            <button>Signup</button>
+        </nav>
+    </header>
+    <center>
+        <h1>Register User</h1>
+        <form>
+            UserName 
+            <input type="text" id = "userName">
+            <br>
+            Password
+            <input type="password" id = "password">
+            <br>
+            email
+            <input type="text" id = "email">
+            <br>
+            <button onclick="register()">Register</button>
+        </form>
+
+    </center>
+   
+    <script src="./js/login.js"></script>
+</body>
+</html>

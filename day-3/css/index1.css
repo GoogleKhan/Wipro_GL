@@ -1,0 +1,12 @@
+.mycard{
+    margin-bottom: 2em;
+    background-color: #ddd;
+}
+.mycard img{
+    width: 20em;
+    height: 30em;
+}
+.cimage{
+    width: 10vw;
+    height: 60vh;
+}

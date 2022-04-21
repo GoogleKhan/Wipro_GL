@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="welcome.html">
+            <img src="images/logo.png" alt="GreatLearning">
+        </a>
+        <nav>
+            <ul id = "menu">
+                <li id = 'ProfilePafeLink'>
+                    <a href="profile-page.html">
+                        Profile page
+                    </a>
+                </li>
+                <li id = "MentorLink">Mentor</li>
+            </ul>
+            <button>Signup</button>
+        </nav>
+    </header>
+    <center>
+        <h1>Login</h1>
+        User Name <input type="text" id = "userName"/>
+        <br>
+        Password <input type="password" id = "password"/>
+        <br>
+        <button onClick = "login()">Login</button>
+        <a href="register.html">Signup</a>
+    </center>
+    <div id = "result"></div>
+    <script src="./js/login.js"></script>
+</body>
+</html>
