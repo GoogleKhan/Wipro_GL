@@ -1,0 +1,201 @@
+-> Data Structure is a way of collecting and organising data in such a way 
+that we can perform operation on these data in an effective way. 
+
+-> String name = "Shadab";
+	int age = 35;
+	
+-> class Student
+	{
+	String	name = "Shadab";
+	int	age = 35;
+	boolean isTopper = false;
+	}
+	
+Differenrent Type of Data Structure:
+-------------------------------------
+Array
+Statck
+Queue
+Linked List
+Graph
+Tree
+-------------------------------------
+Characterstics of DS:
+--------------------------
+1. Linear -> In Linear DS, the data items are arranged in linear sequence. 
+				Example: Array
+
+2. Non-Linear -> In Non-Linear DS, the data items are not in sequence. 
+				Example: Tree, Graph
+				
+3. Homogeneous -> In Homogeneous DS, all the data items are of same type.
+				Example: Array
+
+4. Non-Homogeneous -> In Non-Homogeneous DS, the elements may or may not be of the same type.
+				Example: Class
+				
+5. Static -> In Static  DS, Size are fixed and we cannot change at runtime.
+				Example: Array
+				
+6. Dynamic -> In Dynamic DS, its growable or shrikable at the runtime.
+				Example: LinkedList..
+
+--------------------------------------------------------------------		
+Algorithm:
+===========
+-> An Algorithm is a finite set of instruction or logic, written in order to accomplish a certain task.
+-> Every Algorithm must satisfy the following properties:
+
+1. Input:
+-----------
+There should be 0 or more input supplied externally to the algorithm.
+
+2. Output:
+-----------
+There sholud be atleast 1 output obtained.
+
+3. Finiteness:
+----------------
+The algorithm should have finite number of steps.
+
+4. Defniteness:
+------------------
+Every step of the algorithm should be clear and well defined.
+
+5. Correctness:
+-----------------
+Every step of the algorithm must generate a correct output.
+
+--------------------------------------------------------------------
+=-> An algorithm is said to be efficient and fast, if it takes less time to execute and consumes less memory space.
+-> the performance of an algorithm is measured on the basis of the following properies:
+
+1. Time Complexity
+2. Space Complexity
+
+==========================================
+
+Time Complexity:
+==================
+-> Time complexity of an algorithm signifies the total time required by the program to run till its completion.
+
+
+
+Example:
+---------------
+Problem: Take a number as input , and return sqaure of the number as output
+
+
+
+public class Sample1 {
+
+	public static void main(String[] args) {
+
+		System.out.println(squareIt(4));
+		System.out.println(squareItNew(4));
+
+	}
+	
+	//Solution1
+	static int squareIt(int n) {
+		int output = 0;
+
+		for (int i = 1; i <= n; i++) {
+			output = output + n;
+		}
+		return output;
+	}
+	
+	//Solution1
+	static int squareItNew(int n) {
+
+		return n * n;
+	}
+
+}
+
+
+
+Space Complexity:
+-------------------
+-> Its the amount of memory space required by the algorithm.
+-> An algorithm generally requires space for fo;oowing components:
+
+1. Instruction space:
+---------------------
+-> Its the space required to store the executable version of the program. The space is fixed, 
+   but varies depending upon the number of lines.
+   
+2. Data Space:
+----------------
+-> Its the space required to store all the constants and variables value.
+
+3. Environment Space:
+-----------------------
+Its the space required to store environment information needed to resume the suspended function.
+
+void f1(){
+
+	int x = 10;
+	 f2();
+	SOP(x);
+
+}
+
+void f2(){
+	SOP("Hello");
+}
+
+
+---------------------------------------------------
+Calculation of Space Complexity:
+======================================
+Size of int in java: 4Byte
+
+
+void addition(){
+	int z = a+ b+ c; // ( 4 + 4 + 4 + 4) => 16
+	return z; // 4 
+
+}
+Constant Space Complexity
+-----------------------------------
+// n = 5
+int sum(int a[], int n)
+{
+	int x =0;
+	for(int i =0; i < n ; i++)
+		{
+			x = x + a[i];
+		}
+    return x;
+}
+
+Space Complexity : space of array only = 4 * n => 20
+					Extra Space = n + x + i + return => 16 
+							TOTAL SPACE => 36
+					
+=> (4 * n)	+ 16			
+							
+Linear Space Complexity					
+==============================
+
+
+
+
+
+
+Total => 20 Bytes
+
+
+
+
+
+
+
+
+
+
+
+
+

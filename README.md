@@ -278,11 +278,247 @@ E.g. :
 class A{
 }
 ======================================================================
-Object
-Inheritance
-Polymorphism
-Encapsulation
+Object:
+---------
+1. Object is a real world entity.
+2. Object is an instance of a class.
+
+Syntax:
+------------
+	<type> <var> = new <type>(<parameters>)
+
+Example:
+----------
+	A a = new A();
+
+===============================================================
+Inheritance:
+--------------
+1. Inheritance is a way of Code reusability.
+2. It can define a relationship between two classes i.e. IS-A relationship.
+3. In Java, classes support only Single Inheritance.
+4. In java, interface supports multiple inheritance.
+
+class Person
+{
+   void eat(){-----}
+}
+
+class Employee extends Person
+{
+	void work(){-----}
+}
+---------------------------------
+	Employee emp = new Employee();
+			 emp.work(); // OK
+			 emp.eat(); // OK
+			 
+-----------------------------------
+1. Sibgle Inheritance:
+2. Multiiple Inheritance:
+
+----------------------------------------------------------------------------
+Polymorphism:
+--------------
+1. Operator overloading
+2. Method overloading (Compile time | early | static polymorphism)
+	-> Within a Class if two methods have Same name, but different parameter list
+			=> Number of parameters
+			=> Data type of paramters
+			=> Order of parameters
+			
+3. Method overriding (Run time | late | dynamic polymorphism)
+	-> Between the two classes having IS-A(inheritance) relationship, 
+	  both have method(s) having  Same name and same parameter list
+	  **) private and static and final methods are not take participation in method overiding.
+	  
+	  --> Return Type:
+			a) If return type is primitive, We cannot do any thing, must be same
+		    b) If return type is refrence, We can use same or any sub type.
+      
+	  --> For accessibilty it can be widen
+	       private -> default -> protected -> public
+-------------------------------------------------------
+Encapsulation:
+-----------------
+1. Wrapping data and methods into a single units called encapsulation.
+2. Make your data variable as private and provide getter and setter for external use.
+Example:
+-----------
+class Student
+{
+	private String name;
+	
+	private int age;
+	
+	
+	void display(){
+	System.out.println(name + " : "+ age);
+	}
+}
+
+Student stud = new Student();
+	  stud.name='shad'; /// CE
+	  stud.age =21; // CE
+
+
+
+
 Abstraction
+
+
+---------------------------------------------------------------------
+class <name>
+{
+  // member
+		1. static members
+		2. instance members
+		
+	// variables
+	// methods
+	// *constructors
+	// initializer blocks
+	// nested or inner classes
+
+
+}
+======================
+*) static members are assiciated with class or class name.
+*) instance members are associated with object or object reference.
+======================
+public class Car
+{
+
+ int h;
+ int w; 
+ static float wc;
+
+ void move(){} 
+ static void avg(){} 
+
+}
+=======================
+  int i = 10;
+
+Car c1 = new Car();
+
+
+===================================
+Accessing members:
+----------------------
+<ClassName> . <member>  // only static member
+<ObjRef> . <member>  // instance as well as static member
+<member>
+
+-----------------------------
+Car.wc = 50;
+
+c1.h =20;
+
+-------------------------------------
+hospital
+---------
+A.java, B.java. C.java, D.java, E.java, F.java
+
+
+hospital
+	|- A.java
+	|- doctors
+		|- B.java
+		|- cardio
+			|- C.java
+		|-ent
+			|- D.java
+	|- staff
+		|- E.java
+	|- patient
+		|- F.java
+
+------------------------------------------------------------
+Access Modifier:
+---------------------
+1. private : Only within the same class.
+2. default : Only within the same package.
+3. protected : a) Within the same package 
+               b) and can be go out side the 
+			      package with the help of 
+				  inheritance.
+4. public : can be access any where
+
+---------------------------------------------------
+Abstract Method and Abstract class:
+------------------------------------
+
+
+Constructor:
+------------------
+1. Constructor are special members of a class which are used to construct initial state of an object.
+2. Rule to make a constructor:
+		a. Name of constructor should be same as of the class.
+		b. Only Access modifier are permissible.
+		c. No return tyoe, not even void
+3. Every Java class must have a constructor, if you will not create a constructor, 
+	compiler will provide a default constructor
+
+----------------------------------------------------------------
+Interface:
+----------------
+1. Interface is an user defined data type.
+2. Interface provides multiple inheritance
+
+Syntax:
+------------
+<modifier> interface <name> <extends> 
+	{
+		// body
+	}
+	
+E.g. :
+-------
+
+interface I{
+}
+
+-------------------------------------------
+
+class ---EXTENDS---> class
+
+interface ---EXTENDS---> interface
+
+class ---IMPLEMENTS---> interface
+
+interface ---???---> class  (NOT POSSIBLE)
+
+
+----------------------------------------------------------
+class Person
+{}
+
+class Employee extends Person
+{}
+
+
+class Dog
+{}
+
+--------------------------
+
+Employee IS-A Person (Inheritance)
+Employee HAS-A Dog. (Aggrgation)
+
+Dog IS-A Employee ??
+Employee IS-A Dog ??
+
+
+
+
+
+
+
+
+
+
+
 
 
 
